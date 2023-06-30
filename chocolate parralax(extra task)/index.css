@@ -1,0 +1,125 @@
+body, html {
+  height: 100%;
+
+}
+
+.container {
+    position: relative;
+    align-items: center;
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    size: 40%;
+    background-color:aqua;
+  }
+  
+  .top-right {
+    text-orientation: sideways;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+.vertical-lr{
+  font-family: 'Anton', sans-serif;
+  size: 70%;
+  writing-mode: vertical-rl; 
+  text-orientation: mixed;
+}
+.sideways-rl{
+  font-family: 'Anton', sans-serif;
+  size: 70%;
+  writing-mode: vertical-lr; 
+  text-orientation: mixed;
+}
+h1{
+  font-family: 'Anton', sans-serif;
+  text-align-last: left;
+  padding-left: 10px;
+  color: aliceblue;
+  size: 70%;
+  height: 50%;
+}
+.container{
+  justify-content: center;
+  align-items: center;
+}
+.foreground{
+  transform: translateZ(-1px) scale(1);
+  align-items: center;
+}
+.background{
+  transform: translateZ(-1px) scale(1);
+}
+.choco-img{
+  height: 80%;
+  width:auto;
+  align-self: center;
+}
+/* .background, .foreground{
+  position:absolute;
+  object-fit: cover;
+} */
+.parallax {
+  /* Set a specific height */
+  height: 100%;
+  border: 0%;
+  align-items: center;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image{
+  height: 300px;
+  max-width: max-content;
+}
+.moving-text:hover{
+
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+/* The animation */
+@keyframes marquee{
+  0%{transform: translateX(0%);}
+  100%{transform: translateX(-100%);}
+}
+
+/* media query to enable animation for only those who want it */
+@media (prefers-reduced-motion: no-preference) {
+  .moving-text{
+    display: inline-block;
+    vertical-align: top;
+    animation: marquee 5s infinite;
+    animation-composition: add;
+  }
+.bg1_1{
+  background-image: url("./blue.png");
+  height: 400px;
+}
+.bg2{
+  background-image: url("./green 3.png");
+}
+.bg3{
+  background-image: url("./images/grey 4.png");
+}
+.bg4{
+  background-image: url("./pink.png");
+}
+.bg5{
+  background-image: url("./golden.png");
+}
+.bg6{
+  background-image: url("./dark_red.png");
+}
