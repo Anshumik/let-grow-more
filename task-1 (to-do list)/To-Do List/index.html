@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <!-- ****************GOOGLE FONTS**************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moirai+One&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <!-- ****************STYLES*************** -->
+    <link rel="stylesheet" href="./styless.css">
+</head>
+<body>
+    <div class="container">
+            <b><h1 class="heading-font">
+                <h1 class="heading-bold">Organise your tasks</h1><h1 class="heading-font">chilling => working<br>
+            </h1></b>
+    </div>
+    <div id="myDIV" class="header">
+        <div><h2 style="margin:5px">My To Do List</h2>
+        <input type="text" id="myInput" ><br></div>
+        <div onclick="newElement()" class="addBtn">ADD TASK</div>
+      </div>
+      
+      <ul id="myUL">
+        <li>what's on your mind today</li>
+        <li class="checked">sitting idle</li>
+      </ul>
+      
+    <script src="./index.js"></script>
+</body>
+</html>
